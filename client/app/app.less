@@ -1,29 +1,22 @@
 
-@import 'font-awesome/less/font-awesome.less';
+//@import 'font-awesome/less/font-awesome.less';
 
 
-@fa-font-path: '/bower_components/font-awesome/fonts';
+//@fa-font-path: '/bower_components/font-awesome/fonts';
+@import "less/normalize.less";
+@import "less/media.less";
+@import "fonts.less";
+@import "less/grid.less";
+@import "less/variables.less";
 
-/**
- * App-wide Styles
- */
-
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 730px;
-    }
-}
 
 // injector
-@import 'account/login/login.less';
-@import 'admin/admin.less';
+@import 'fonts.less';
+@import 'less/fonts.less';
+@import 'less/grid.less';
+@import 'less/media.less';
+@import 'less/normalize.less';
+@import 'less/variables.less';
 @import 'main/main.less';
+@import 'reservations/reservations.less';
 // endinjector

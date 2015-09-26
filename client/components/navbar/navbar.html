@@ -1,20 +1,23 @@
-<div class="navbar navbar-default navbar-static-top" ng-controller="NavbarCtrl">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" ng-click="isCollapsed = !isCollapsed">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="/" class="navbar-brand">hint-test</a>
-    </div>
-    <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
-      <ul class="nav navbar-nav">
-        <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
-            <a ng-href="{{item.link}}">{{item.title}}</a>
-        </li>
-      </ul>
-    </div>
+<div class="navbar-wrapper" id="nav" ng-controller="NavbarCtrl">
+  
+  <div class="logo pull-left">
+    <svg version="1.1" class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       width="612px" height="792px" viewBox="100 200 500 400" enable-background="new 0 0 612 792" xml:space="preserve">
+       <path fill-rule="evenodd" clip-rule="evenodd" d="M517.642,554.979c14.405,0,21.031-3.169,24.489-5.186l4.897,14.117
+      c-6.05,3.168-15.846,6.338-32.267,6.338c-25.353,0-38.029-13.541-38.029-40.333V427.928H452.82V416.98l23.912-3.457l4.609-41.198
+      h12.1v41.198h43.791v14.405h-43.791v99.97C493.441,547.201,502.949,554.979,517.642,554.979z M405.579,465.957
+      c0-25.641-12.964-39.757-36.588-39.757c-21.319,0-37.453,14.117-43.214,30.25v112.358h-16.71V413.523h12.388l3.746,16.998h1.152
+      c2.881-4.034,18.438-19.879,44.943-19.879c31.115,0,50.129,16.998,50.994,51.282v106.884h-16.71V465.957z M343.485,307.409
+      c-22.177,0-40.154-17.977-40.154-40.154s17.978-40.154,40.154-40.154c22.176,0,40.154,17.978,40.154,40.154
+      S365.661,307.409,343.485,307.409z M284.483,345.187c-13.802,0-24.991-11.189-24.991-24.992c0-13.802,11.189-24.991,24.991-24.991
+      s24.991,11.189,24.991,24.991C309.475,333.998,298.286,345.187,284.483,345.187z M242.668,377.404
+      c-9.072,0-16.427-7.354-16.427-16.426c0-9.073,7.354-16.427,16.427-16.427s16.427,7.354,16.427,16.427
+      C259.095,370.049,251.74,377.404,242.668,377.404z M160.421,463.076c0-20.455-10.947-36.876-34.283-36.876
+      c-24.488,0-40.046,15.557-45.52,30.25v112.358h-16.71V343.869l16.71,13.519v73.998h1.152c3.457-4.61,17.574-20.744,46.096-20.744
+      c29.674,0,49.265,19.303,49.265,50.129v108.037h-16.71V463.076z M252.317,568.808h-16.709V424.104l16.709-14.36V568.808z"/>
+    </svg>
+  </div>
+  <div class="pull-right">
+    <a  du-smooth-scroll="#contact" class="button">Reserve Your Hint</a>
   </div>
 </div>

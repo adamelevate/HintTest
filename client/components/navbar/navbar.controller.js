@@ -7,9 +7,27 @@ angular.module('hintTestApp')
       'link': '/'
     }];
 
-    $scope.isCollapsed = true;
 
-    $scope.isActive = function(route) {
-      return route === $location.path();
+    console.log('hello');
+
+    $scope.initScrollr = function () {
+      $(function () {
+          
+        var height = $('header').height();
+          var nav = $("#nav");
+          $(window).bind("scroll", function(e) {
+            if ($('body').scrollTop() > height-110) {
+              nav.addClass("fix");
+            }
+            else {
+              nav.removeClass("fix");
+            }
+            
+          });
+      });
+
     };
-  });
+
+    $scope.initScrollr();
+
+});
