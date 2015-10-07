@@ -7,7 +7,7 @@ angular.module('hintTestApp')
   $scope.hintForm = [];
 
   $scope.sendMessage = function(){
-
+    $scope.formStatus = "sending"; 
 
     var data = {
         'message': {
@@ -35,8 +35,11 @@ angular.module('hintTestApp')
 
       Mandrill.messages.send(data).success(function(response){
         // Succes handling
+        $scope.formStatus = 'success';
       }).error(function(response){
         // Error handling
+        $scope.formStatus = 'issue';
+        console.log(response);
       });
 
   };

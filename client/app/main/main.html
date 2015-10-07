@@ -132,7 +132,7 @@
       <div class="col-sm-4">
         <div class="wrap">
           <div class="appliance" style="background:url(assets/images/appliances/freshandcool.jpg)"></div>
-          <div class="text">Refridgerator</div>
+          <div class="text">Refrigerator</div>
           <div class="row">
             <div class="col-xs-6">
               <strong>8</strong> Alerts
@@ -234,13 +234,15 @@
     <p class="sub">We're still tweaking Hint to be the best at helping you with home maintenance. If you'd like to reserve yours today, we'll make it worth your while. </p>
       <form class="form-horizontal" action="sendMessage()">
          <div ng-show="formStatus == 'sending'">
-            <h3>Sending Your Message....</h3>
+            <h3>Reserving your Hint...</h3>
          </div>
          <div ng-show="formStatus == 'success'">
             <h3>Your Hint has been reserved!</h3>
          </div>
          <fieldset ng-hide="formStatus">
-
+              <div ng-show="formStatus == 'issue'">
+                <h3 class="error">Sorry there has been an issue, please retry</h3>
+              </div>
             <!-- Text input--> 
             <div class="form-group row">
                <label class="col-md-4 control-label" for="textinput">Name</label> 
