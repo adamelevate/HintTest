@@ -390,7 +390,7 @@ module.exports = function (grunt) {
       },
       heroku: {
         options: {
-          remote: 'git@heroku.com:hintstack.git',
+          remote: 'git@heroku.com:icon-thermostat.git',
           branch: 'master'
         }
       },
