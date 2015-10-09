@@ -10,7 +10,7 @@ angular.module('hintTestApp', [
 ])
 .value('duScrollDuration', 2000)
 .config(function(MandrillProvider) {
-  MandrillProvider.setApiKey('IxwTSi75tHSbFHI-JVSQYQ');
+  MandrillProvider.setApiKey('RlA0zwgMpMlqvq_7QmSDig');
 })
 	// .factory('Mandrill', function($resource) {
 	//   var Mandrill;
