@@ -53,7 +53,7 @@
       </div>
       <div class="col-sm-6">
         <h2>Focused Control.</h2>
-        <p>One button to turn Icon on and a soft glow tells you when it's heating or cooling, anything else you need can be done from your smart phone, tablet or computer.</p>
+        <p>One button turns Icon on and a soft glow tells you when it's heating or cooling. Anything else can be done from your smart phone, tablet or computer.</p>
       </div>
       <div class="col-sm-6 phone visible-xs">
         <img src="assets/images/phone4.jpg" alt="">
@@ -81,14 +81,14 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6 hidden-xs bigphone">
-        <img src="assets/images/phone03.jpg" alt="">
+        <img src="assets/images/phone-activity.jpg" alt="">
       </div>
       <div class="col-sm-6">
         <h2>Simply Transparent.</h2>
         <p>When you give access to others in your home, you can see who's adjusted the temperature and how much those actions cost or save.</p>
       </div>
       <div class="col-sm-6 phone visible-xs">
-        <img src="assets/images/phone03.jpg" alt="">
+        <img src="assets/images/phone-activity.jpg" alt="">
       </div>
     </div>
   </div>
@@ -128,7 +128,7 @@
     <h2 class="text-center visible-xs">Get the Icon Thermostat.</h2>
     <h2 class="text-center hidden-xs">Get the Icon Thermostat.</h2>
         
-    <p class="sub">Icon is expected to be in production Summer 2016, so let us know you're interested and we'll give you an awesome discount for believing in us :)</p>
+    <p class="sub">Icon is trying to be ready by late 2016, so let us know you're interested and it will keep us motivated to reach our goal!</p>
       <form class="form-horizontal" action="sendMessage()">
          <div ng-show="formStatus == 'sending'">
             <h3>Reserving your Icon...</h3>
@@ -143,17 +143,18 @@
             <!-- Text input--> 
             <div class="form-group row">
                <label class="col-md-2 control-label" for="textinput">Name</label> 
-               <div class="col-md-5"> <input ng-model="iconForm.name" type="text" placeholder="" class="form-control input-md"> </div>
+               <div class="col-md-10"> <input ng-model="iconForm.name" type="text" placeholder="" class="form-control input-md"> </div>
             </div>
 
             <!-- Text input--> 
             <div class="form-group row">
                <label class="col-md-2 control-label" for="textinput">Email</label> 
-               <div class="col-md-4"> <input ng-model="iconForm.email" type="text" placeholder="" class="form-control input-md"> </div>
+               <div class="col-md-10"> <input ng-model="iconForm.email" type="text" placeholder="" class="form-control input-md"> </div>
             </div>
 
 
-            <button type="button" class="button" ng-click="sendMessage()">Reserve My Icon</button> 
+            <button type="button" class="button" ng-click="sendMessage()">Reserve My Icon</button>
+            <p class="explainer">Your reservation requires no credit card, we'll just keep you up to date with our progress and give you early bird pricing when we launch.</p> 
          </fieldset>
       </form>
       </div>
